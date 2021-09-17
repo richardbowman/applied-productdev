@@ -1,0 +1,1258 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>How we built this playbook - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-we-built-this-playbook" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How we built this playbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Modern Product Principles Applied
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Excalidraw
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Excalidraw" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Excalidraw
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Excalidraw/Drawing%202021-09-14%2012.00.24.excalidraw/" class="md-nav__link">
+        Drawing 2021 09 14 12.00.24.excalidraw
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Sections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Sections" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Sections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Applying%20Modern%20Product%20Development%20Principles/" class="md-nav__link">
+        Applying Modern Product Development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Building%20on%20Lean%20and%20Agile/" class="md-nav__link">
+        Building on Agile and Lean
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Building%20the%20Right%20Team/" class="md-nav__link">
+        Building the Right Team
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Challenges%20in%20Product%20Development/" class="md-nav__link">
+        Challenges in Product Development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Continuous%20Discovery/" class="md-nav__link">
+        Continuous Discovery
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%2C%20Fun%2C%20%26%20Events/" class="md-nav__link">
+        Culture, Fun, & Events
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Delivery%20Techniques%20%26%20Considerations/" class="md-nav__link">
+        Delivery Techniques & Considerations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Development%20Track.excalidraw/" class="md-nav__link">
+        Development Track.excalidraw
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discoverty%20Lane_2021-09-15%2011.26.08/" class="md-nav__link">
+        Discoverty Lane 2021 09 15 11.26.08
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discovery%20-%20Opportunity%20Grooming/" class="md-nav__link">
+        Opportunity Grooming
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discovery%20Lane/" class="md-nav__link">
+        Discovery Lane
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discovery%20Process.excalidraw/" class="md-nav__link">
+        Discovery Process.excalidraw
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dual-Track%20Development/" class="md-nav__link">
+        Dual Track Development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frame/" class="md-nav__link">
+        Frame
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Holistic%20Product/" class="md-nav__link">
+        Holistic Product
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How we built this playbook
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        How we built this playbook
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-we-pulling-from" class="md-nav__link">
+    What are we pulling from?
+  </a>
+  
+    <nav class="md-nav" aria-label="What are we pulling from?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    Principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frameworks" class="md-nav__link">
+    Frameworks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#techniques" class="md-nav__link">
+    Techniques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guides-and-resources" class="md-nav__link">
+    Guides and Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-terms-and-definitions" class="md-nav__link">
+    Basic terms and definitions
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic terms and definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    Workshop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review" class="md-nav__link">
+    Review
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity" class="md-nav__link">
+    Activity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artifact" class="md-nav__link">
+    Artifact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opportunity" class="md-nav__link">
+    Opportunity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initiative" class="md-nav__link">
+    Initiative
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    Theme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grooming" class="md-nav__link">
+    Grooming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ceremony" class="md-nav__link">
+    Ceremony
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-used-in-playbook" class="md-nav__link">
+    Tools used in playbook
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-get-this-playbook" class="md-nav__link">
+    How to get this playbook
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Initiative%20Budget/" class="md-nav__link">
+        Initiative Budget
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Iteration%20Planning/" class="md-nav__link">
+        Iteration Planning
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Journey%20mapping%20activity/" class="md-nav__link">
+        Journey Mapping Activity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Leadership%20Principles/" class="md-nav__link">
+        Leadership Principles
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OKRs/" class="md-nav__link">
+        OKRs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Opportunity%20Assessment/" class="md-nav__link">
+        Opp Assessment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Opportunity%20Backlog/" class="md-nav__link">
+        Opportunity Backlog
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plan/" class="md-nav__link">
+        Plan
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Process%20mapping%20activity/" class="md-nav__link">
+        Process Mapping Activity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Product%20Roadmap/" class="md-nav__link">
+        Product Roadmap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Resourcing/" class="md-nav__link">
+        Resourcing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Scaling%20to%20your%20team/" class="md-nav__link">
+        Sizing this playbook to your company/team
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Showcase/" class="md-nav__link">
+        Showcase
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simplified%20Delivery%20Flow/" class="md-nav__link">
+        Simplified Delivery Flow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simplified%20Delivery%20Flow_2021-09-07%2023.10.11.excalidraw/" class="md-nav__link">
+        Simplified Delivery Flow 2021 09 07 23.10.11.excalidraw
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simplified%20Discovery%20Flow/" class="md-nav__link">
+        Simplified Discovery Workflow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Solution%20Framing%20Workshop/" class="md-nav__link">
+        Solution Framing Workshop
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Story%20Mapping%20Activity/" class="md-nav__link">
+        Story Mapping Activity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Career%20Paths/" class="md-nav__link">
+        Team Career Paths
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Evolution/" class="md-nav__link">
+        Team Evolution
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Roles%20%26%20Responsibilities%201/" class="md-nav__link">
+        Team Roles and Responsibilities
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Roles%20%26%20Responsibilities/" class="md-nav__link">
+        Team Roles and Responsibilities
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Structure/" class="md-nav__link">
+        Team Structure
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Untitled-2021-09-14-1113.excalidraw/" class="md-nav__link">
+        Untitled 2021 09 14 1113.excalidraw
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Vision%20%26%20Strategy/" class="md-nav__link">
+        Vision and Strategy
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-we-pulling-from" class="md-nav__link">
+    What are we pulling from?
+  </a>
+  
+    <nav class="md-nav" aria-label="What are we pulling from?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    Principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frameworks" class="md-nav__link">
+    Frameworks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#techniques" class="md-nav__link">
+    Techniques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guides-and-resources" class="md-nav__link">
+    Guides and Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-terms-and-definitions" class="md-nav__link">
+    Basic terms and definitions
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic terms and definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workshop" class="md-nav__link">
+    Workshop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review" class="md-nav__link">
+    Review
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity" class="md-nav__link">
+    Activity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#artifact" class="md-nav__link">
+    Artifact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opportunity" class="md-nav__link">
+    Opportunity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initiative" class="md-nav__link">
+    Initiative
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" class="md-nav__link">
+    Theme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grooming" class="md-nav__link">
+    Grooming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ceremony" class="md-nav__link">
+    Ceremony
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-used-in-playbook" class="md-nav__link">
+    Tools used in playbook
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-get-this-playbook" class="md-nav__link">
+    How to get this playbook
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="how-we-built-this-playbook">How we built this playbook<a class="headerlink" href="#how-we-built-this-playbook" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This playbook is meant to be an artifact that provides a holistic explanation of the approach used by a company’s product, design, and engineering functions to build digital software solutions that customers love. There is not a strong industry-standard approach to product management. Having interviewed dozens of product leaders, most have built their own process with their teams at their own respective companies.</p>
+<p>We didn't want to give this playbook a fancy trademarked name with a new trademarked process. Instead this playbook is effectively built by reading, processing, and consuming the latest product literature and knowledge from the industry into a usable set of tools and techniques.  I will call this out everywhere I can - this isn’t a one-off that is unique (or somehow going to disrupt your competitors because only you will know about it), but instead a practical toolkit to apply all of the modern thinking in the world of digital product development.</p>
+<p>This template is meant to be a product-playbook-in-a-box, but each organizational will want to adapt. This playbook doesn't aspire to be the one process to solve all of the problems, but as an accelerator to you as a product leader who needs to not start from scratch or just start from principles to get a solid product process moving.</p>
+<h2 id="what-are-we-pulling-from">What are we pulling from?<a class="headerlink" href="#what-are-we-pulling-from" title="Permanent link">&para;</a></h2>
+<p>This playbook is an amalgamation of learnings from so many leaders in the industry combined with the experience and notes of the authors. </p>
+<h3 id="principles">Principles<a class="headerlink" href="#principles" title="Permanent link">&para;</a></h3>
+<ol>
+<li>[[Inspired]]</li>
+<li>[[Build What Matters]]</li>
+<li>[[Continuous Discovery Habits]]</li>
+<li><a href="https://marcabraham.com/2014/11/26/product-management-at-amazon-what-is-it-like/">Product management at Amazon - What is it like</a></li>
+</ol>
+<h3 id="frameworks">Frameworks<a class="headerlink" href="#frameworks" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://less.works/less/structure/teams">Teams - Large Scale Scrum (LeSS)</a></li>
+</ol>
+<h3 id="techniques">Techniques<a class="headerlink" href="#techniques" title="Permanent link">&para;</a></h3>
+<ol>
+<li>[[References/Highlights/Working Backwards|Working Backwards]]</li>
+<li>[[User Story Mapping]]</li>
+<li><a href="https://www.romanpichler.com/tools/the-go-product-roadmap/">GO Product Roadmap  Roman Pichler</a></li>
+<li>[[HEART Framework]]</li>
+<li>[[UXUD]]</li>
+<li><a href="https://500hats.typepad.com/500blogs/2007/06/internet-market.html">Product Marketing AARRR</a></li>
+</ol>
+<h3 id="guides-and-resources">Guides and Resources<a class="headerlink" href="#guides-and-resources" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://twitter.com/johncutlefish/status/1425849975108358147">Story point jobs</a></li>
+<li>[[Product Discovery ​A Practical Guide for Agile Teams (2021)]]</li>
+<li><a href="https://www.atlassian.com/agile">Atlassian Agile</a></li>
+<li><a href="https://www.atlassian.com/team-playbook/plays">Plays Find the right Plays for your team  Atlassian</a></li>
+</ol>
+<h2 id="basic-terms-and-definitions">Basic terms and definitions<a class="headerlink" href="#basic-terms-and-definitions" title="Permanent link">&para;</a></h2>
+<h3 id="workshop">Workshop<a class="headerlink" href="#workshop" title="Permanent link">&para;</a></h3>
+<p>A collaborative session involving multiple team members where there is a structured approach to starting with a goal, eliciting, selecting, and optimizing plans and ideas together.</p>
+<h3 id="review">Review<a class="headerlink" href="#review" title="Permanent link">&para;</a></h3>
+<p>A share-out session where the primary function of the meeting is to have a core team share results and leanings with a broader stakeholder group and seek understanding, questions, concerns, and move-forward support.</p>
+<h3 id="activity">Activity<a class="headerlink" href="#activity" title="Permanent link">&para;</a></h3>
+<p>A work process either done individually or as a group collaborative session.</p>
+<h3 id="artifact">Artifact<a class="headerlink" href="#artifact" title="Permanent link">&para;</a></h3>
+<p>a document that memorializes the concepts or work that has been done by an individual or a team in a workshop.</p>
+<h3 id="opportunity">Opportunity<a class="headerlink" href="#opportunity" title="Permanent link">&para;</a></h3>
+<p>a business or customer problem that is relevant to our business where we may create initiatives to support driving value.</p>
+<h3 id="initiative">Initiative<a class="headerlink" href="#initiative" title="Permanent link">&para;</a></h3>
+<p>An investment or commitment towards a particular opportunity space. </p>
+<h3 id="theme">Theme<a class="headerlink" href="#theme" title="Permanent link">&para;</a></h3>
+<p>A category of opportunities and associated solutions that may break down through initiatives into epics and stories.</p>
+<h3 id="grooming">Grooming<a class="headerlink" href="#grooming" title="Permanent link">&para;</a></h3>
+<p>A specific <a href="#activity">#Activity</a> around maintaining, refining, and preparing work for future phases</p>
+<h3 id="ceremony">Ceremony<a class="headerlink" href="#ceremony" title="Permanent link">&para;</a></h3>
+<p>A recurring group <a href="#activity">#Activity</a> that becomes habitual.</p>
+<h2 id="tools-used-in-playbook">Tools used in playbook<a class="headerlink" href="#tools-used-in-playbook" title="Permanent link">&para;</a></h2>
+<p>We've attempted to be as tool agnostic as possible, but also want to make this playbook able to be used on day 1. The contents itself is written in Obsidian Markdown, and document and spreadsheet templates are built in LibreOffice Open Document format which can be imported into either Google Workspace, Microsoft Office, or other tools as needed. Things get harder at the diagramming and collaboration templates level. We've working primarily in Excalidraw since it is open source and can support diagrams as well as collaboration.</p>
+<h2 id="how-to-get-this-playbook">How to get this playbook<a class="headerlink" href="#how-to-get-this-playbook" title="Permanent link">&para;</a></h2>
+<h1 id="todo-licensing-access">todo licensing, access<a class="headerlink" href="#todo-licensing-access" title="Permanent link">&para;</a></h1>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../Holistic%20Product/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Holistic Product" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Holistic Product
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Initiative%20Budget/" class="md-footer__link md-footer__link--next" aria-label="Next: Initiative Budget" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Initiative Budget
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+    
+  </body>
+</html>

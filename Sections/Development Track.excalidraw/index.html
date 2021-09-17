@@ -1,0 +1,913 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
+    
+    
+      
+        <title>Development Track.excalidraw - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#text-elements" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Development Track.excalidraw
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Modern Product Principles Applied
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Excalidraw
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Excalidraw" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Excalidraw
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Excalidraw/Drawing%202021-09-14%2012.00.24.excalidraw/" class="md-nav__link">
+        Drawing 2021 09 14 12.00.24.excalidraw
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Sections
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Sections" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Sections
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Applying%20Modern%20Product%20Development%20Principles/" class="md-nav__link">
+        Applying Modern Product Development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Building%20on%20Lean%20and%20Agile/" class="md-nav__link">
+        Building on Agile and Lean
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Building%20the%20Right%20Team/" class="md-nav__link">
+        Building the Right Team
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Challenges%20in%20Product%20Development/" class="md-nav__link">
+        Challenges in Product Development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Continuous%20Discovery/" class="md-nav__link">
+        Continuous Discovery
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%2C%20Fun%2C%20%26%20Events/" class="md-nav__link">
+        Culture, Fun, & Events
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Delivery%20Techniques%20%26%20Considerations/" class="md-nav__link">
+        Delivery Techniques & Considerations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Development Track.excalidraw
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discoverty%20Lane_2021-09-15%2011.26.08/" class="md-nav__link">
+        Discoverty Lane 2021 09 15 11.26.08
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discovery%20-%20Opportunity%20Grooming/" class="md-nav__link">
+        Opportunity Grooming
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discovery%20Lane/" class="md-nav__link">
+        Discovery Lane
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discovery%20Process.excalidraw/" class="md-nav__link">
+        Discovery Process.excalidraw
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dual-Track%20Development/" class="md-nav__link">
+        Dual Track Development
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frame/" class="md-nav__link">
+        Frame
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Holistic%20Product/" class="md-nav__link">
+        Holistic Product
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How%20we%20built%20this%20playbook/" class="md-nav__link">
+        How we built this playbook
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Initiative%20Budget/" class="md-nav__link">
+        Initiative Budget
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Iteration%20Planning/" class="md-nav__link">
+        Iteration Planning
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Journey%20mapping%20activity/" class="md-nav__link">
+        Journey Mapping Activity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Leadership%20Principles/" class="md-nav__link">
+        Leadership Principles
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OKRs/" class="md-nav__link">
+        OKRs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Opportunity%20Assessment/" class="md-nav__link">
+        Opp Assessment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Opportunity%20Backlog/" class="md-nav__link">
+        Opportunity Backlog
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plan/" class="md-nav__link">
+        Plan
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Process%20mapping%20activity/" class="md-nav__link">
+        Process Mapping Activity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Product%20Roadmap/" class="md-nav__link">
+        Product Roadmap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Resourcing/" class="md-nav__link">
+        Resourcing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Scaling%20to%20your%20team/" class="md-nav__link">
+        Sizing this playbook to your company/team
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Showcase/" class="md-nav__link">
+        Showcase
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simplified%20Delivery%20Flow/" class="md-nav__link">
+        Simplified Delivery Flow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simplified%20Delivery%20Flow_2021-09-07%2023.10.11.excalidraw/" class="md-nav__link">
+        Simplified Delivery Flow 2021 09 07 23.10.11.excalidraw
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Simplified%20Discovery%20Flow/" class="md-nav__link">
+        Simplified Discovery Workflow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Solution%20Framing%20Workshop/" class="md-nav__link">
+        Solution Framing Workshop
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Story%20Mapping%20Activity/" class="md-nav__link">
+        Story Mapping Activity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Career%20Paths/" class="md-nav__link">
+        Team Career Paths
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Evolution/" class="md-nav__link">
+        Team Evolution
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Roles%20%26%20Responsibilities%201/" class="md-nav__link">
+        Team Roles and Responsibilities
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Roles%20%26%20Responsibilities/" class="md-nav__link">
+        Team Roles and Responsibilities
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Team%20Structure/" class="md-nav__link">
+        Team Structure
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Untitled-2021-09-14-1113.excalidraw/" class="md-nav__link">
+        Untitled 2021 09 14 1113.excalidraw
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Vision%20%26%20Strategy/" class="md-nav__link">
+        Vision and Strategy
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==</p>
+<p>%%</p>
+<h1 id="text-elements">Text Elements<a class="headerlink" href="#text-elements" title="Permanent link">&para;</a></h1>
+<p>Grooming ^Fqet0nit</p>
+<p>Plan ^u5ZrE0At</p>
+<p>Build ^iCKOcXUw</p>
+<p>Deliver ^FN0czWhR</p>
+<p>Retro ^S3WIXfjo</p>
+<p>maximize velocity ^r05mBg05</p>
+<p>Backlog ^ZZaRSCOi</p>
+<p>High quality
+working software
+comes out ^Fa261iMW</p>
+<p>%%</p>
+<h1 id="drawing">Drawing<a class="headerlink" href="#drawing" title="Permanent link">&para;</a></h1>
+<p><code>json
+{"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[{"id":"D9tpWubFWHAqFuzNcBCqU","type":"rectangle","x":-137.26708984375,"y":-254.1021728515625,"width":159.216064453125,"height":91.99539184570312,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":1913614976,"version":32,"versionNonce":402911872,"isDeleted":false,"boundElementIds":["rwtrRTcDscRRrhxtPBj14","eaXsRGfz1ul2HVjucBZ2x"]},{"id":"Fqet0nit","type":"text","x":-99.1590576171875,"y":-220.60447692871094,"width":83,"height":25,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":1054675584,"version":34,"versionNonce":1260307840,"isDeleted":false,"boundElementIds":null,"text":"Grooming","fontSize":20,"fontFamily":1,"textAlign":"center","verticalAlign":"middle","baseline":18},{"id":"5QeuIvkLkyDv6qePNVAsn","type":"rectangle","x":33.8382568359375,"y":-255.47198486328125,"width":169.39013671875,"height":90.4918212890625,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":2043429504,"version":49,"versionNonce":255480448,"isDeleted":false,"boundElementIds":null},{"id":"u5ZrE0At","type":"text","x":98.0333251953125,"y":-222.72607421875,"width":41,"height":25,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":1723302528,"version":12,"versionNonce":155976320,"isDeleted":false,"boundElementIds":null,"text":"Plan","fontSize":20,"fontFamily":1,"textAlign":"center","verticalAlign":"middle","baseline":18},{"type":"rectangle","version":110,"versionNonce":900182656,"isDeleted":false,"id":"MSueE6VKxpATNTI8NmJ3S","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":216.3780517578125,"y":-257.5585021972656,"strokeColor":"#000000","backgroundColor":"transparent","width":169.39013671875,"height":90.4918212890625,"seed":156910976,"groupIds":[],"strokeSharpness":"sharp","boundElementIds":[]},{"id":"iCKOcXUw","type":"text","x":277.829345703125,"y":-224.3004150390625,"width":47,"height":25,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":768942720,"version":7,"versionNonce":532854144,"isDeleted":false,"boundElementIds":null,"text":"Build","fontSize":20,"fontFamily":1,"textAlign":"center","verticalAlign":"middle","baseline":18},{"type":"rectangle","version":231,"versionNonce":990732928,"isDeleted":false,"id":"0nkIOyVDlYl54r0zxkwl4","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":396.113566080729,"y":-258.3503112792968,"strokeColor":"#000000","backgroundColor":"transparent","width":169.39013671875,"height":90.4918212890625,"seed":210294144,"groupIds":[],"strokeSharpness":"sharp","boundElementIds":[]},{"id":"FN0czWhR","type":"text","x":447.808634440104,"y":-225.60440063476557,"width":66,"height":25,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":476418688,"version":73,"versionNonce":1355810176,"isDeleted":false,"boundElementIds":null,"text":"Deliver","fontSize":20,"fontFamily":1,"textAlign":"center","verticalAlign":"middle","baseline":18},{"type":"rectangle","version":270,"versionNonce":978605440,"isDeleted":false,"id":"qPIxHD7GxVsqVtjhzMxFd","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":580.087687174479,"y":-255.94726562499994,"strokeColor":"#000000","backgroundColor":"transparent","width":169.39013671875,"height":90.4918212890625,"seed":710763904,"groupIds":[],"strokeSharpness":"sharp","boundElementIds":["rwtrRTcDscRRrhxtPBj14","CgvIv5t-lhaLOlfo_IjOR"]},{"id":"S3WIXfjo","type":"text","x":637.282755533854,"y":-223.2013549804687,"width":55,"height":25,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":1175851648,"version":69,"versionNonce":330519936,"isDeleted":false,"boundElementIds":null,"text":"Retro","fontSize":20,"fontFamily":1,"textAlign":"center","verticalAlign":"middle","baseline":18},{"id":"rwtrRTcDscRRrhxtPBj14","type":"arrow","x":761.9578179253471,"y":-152.16946072048594,"width":906.139933268229,"height":72.35369353304948,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"round","seed":1471120768,"version":246,"versionNonce":26531200,"isDeleted":false,"boundElementIds":null,"points":[[0,0],[-173.08817545572913,70.56572051037786],[-843.5188802083331,72.35369353304948],[-906.139933268229,2.268711685855387]],"lastCommittedPoint":[-906.139933268229,4.433390299479186],"startBinding":{"elementId":"qPIxHD7GxVsqVtjhzMxFd","focus":-1.2303217883659257,"gap":13.2859836154515},"endBinding":{"elementId":"D9tpWubFWHAqFuzNcBCqU","focus":1.147639560107625,"gap":12.20603197122881},"startArrowhead":null,"endArrowhead":"arrow"},{"id":"r05mBg05","type":"text","x":191.89067925347203,"y":-122.58229234483494,"width":164,"height":25,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":1257779840,"version":76,"versionNonce":2074866304,"isDeleted":false,"boundElementIds":null,"text":"maximize velocity","fontSize":20,"fontFamily":1,"textAlign":"left","verticalAlign":"top","baseline":18},{"id":"ZZaRSCOi","type":"text","x":-164.50071885850696,"y":-324.97961086697023,"width":74,"height":25,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":1534100864,"version":111,"versionNonce":305152640,"isDeleted":false,"boundElementIds":["eaXsRGfz1ul2HVjucBZ2x"],"text":"Backlog","fontSize":20,"fontFamily":1,"textAlign":"left","verticalAlign":"top","baseline":18},{"id":"eaXsRGfz1ul2HVjucBZ2x","type":"arrow","x":-127.78603786892361,"y":-292.1012030707463,"width":35.51513671875,"height":27.202962239583314,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"round","seed":642073216,"version":33,"versionNonce":432743808,"isDeleted":false,"boundElementIds":null,"points":[[0,0],[35.51513671875,27.202962239583314]],"lastCommittedPoint":null,"startBinding":{"elementId":"ZZaRSCOi","focus":0.5043290430411332,"gap":7.878407796223939},"endBinding":{"elementId":"D9tpWubFWHAqFuzNcBCqU","focus":0.2830850707126461,"gap":10.79606797960048},"startArrowhead":null,"endArrowhead":"arrow"},{"id":"CgvIv5t-lhaLOlfo_IjOR","type":"arrow","x":709.5674777560762,"y":-159.8277452256942,"width":33.427734375,"height":53.985799153645814,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"round","seed":132227712,"version":11,"versionNonce":1242305152,"isDeleted":false,"boundElementIds":null,"points":[[0,0],[33.427734375,53.985799153645814]],"lastCommittedPoint":null,"startBinding":{"elementId":"qPIxHD7GxVsqVtjhzMxFd","focus":-0.11785918944537178,"gap":5.627699110243242},"endBinding":null,"startArrowhead":null,"endArrowhead":"arrow"},{"id":"Fa261iMW","type":"text","x":694.9817030164929,"y":-85.86540391710048,"width":163,"height":75,"angle":0,"strokeColor":"#000000","backgroundColor":"transparent","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"strokeSharpness":"sharp","seed":65389184,"version":41,"versionNonce":1092321920,"isDeleted":false,"boundElementIds":null,"text":"High quality\nworking software\ncomes out","fontSize":20,"fontFamily":1,"textAlign":"left","verticalAlign":"top","baseline":68}],"appState":{"theme":"light","viewBackgroundColor":"#ffffff","currentItemStrokeColor":"#000000","currentItemBackgroundColor":"transparent","currentItemFillStyle":"hachure","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":1,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStrokeSharpness":"sharp","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","currentItemLinearStrokeSharpness":"round","gridSize":null}}</code>%%</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../Delivery%20Techniques%20%26%20Considerations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Delivery Techniques &amp; Considerations" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Delivery Techniques & Considerations
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Discoverty%20Lane_2021-09-15%2011.26.08/" class="md-footer__link md-footer__link--next" aria-label="Next: Discoverty Lane 2021 09 15 11.26.08" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Discoverty Lane 2021 09 15 11.26.08
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
+      
+    
+  </body>
+</html>
