@@ -1,0 +1,1 @@
+[Spotify Rhythm - how we get aligned (slides from my talk at Agile Sverige) - Crisp's Blog](https://blog.crisp.se/2016/06/08/henrikkniberg/spotify-rhythm?ref=https://product-frameworks.com)

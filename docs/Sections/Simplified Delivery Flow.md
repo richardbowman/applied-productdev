@@ -1,0 +1,1 @@
+![[Personal & Career/Consulting/Playbook/Simplified Delivery Flow_2021-09-07 23.10.11.excalidraw.md]]
