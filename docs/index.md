@@ -16,7 +16,7 @@
  1. [[Team Structure]]
  1. [[Management Structure]]
  1. [[Team Evolution]]
- 1. [[applied-productdev/docs/Sections/Team Roles & Responsibilities]]
+ 1. [[Team Roles & Responsibilities]]
  1. [[Team Career Paths]]
  2. [[Culture, Fun, & Events]]
 
